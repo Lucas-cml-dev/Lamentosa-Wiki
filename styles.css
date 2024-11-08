@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
+    margin: 01;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline ;
+
+}
+
+main {
+    padding: 2rem;
+}
+
+.content-section {
+    margin-top: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+p{
+    margin: 5px;
+    padding: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: -40px;
+}
+
+table#tabmagia{
+    border: 1px solid #606060; 
+    border-spacing: 0px; 
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+table#tabmagia td.ce{
+    background-color: #7e7c7c;
+    color: #ffffff;
+    vertical-align: auto;
+    font-weight: bolder;
+    border: 1px solid #606060; 
+
+}
+table#tabmagia td.cd{
+    background-color: #ffffff;
+    color: #7e7c7c;
+    font-size: 13px;
+    font-weight: bolder;
+    border: 1px solid #606060; 
+
+}
+table#tabmagia td#idgrim{
+    background-color: #7e7c7c;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bolder;
+    text-align: center;
+    border: 1px solid #606060; 
+    
+}
+th{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #606060;
+}
+tr{
+    border: 1px solid #606060;
+}
+h2#titcenter{
+    text-align: center;
+}

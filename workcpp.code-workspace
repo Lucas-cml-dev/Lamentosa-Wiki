@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../Downloads/PRovavel portifolio/vcard-personal-portfolio-master"
+		},
+		{
+			"path": "../../../../Downloads/curso em video/curso-html5-pacote01"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "vcard-personal-portfolio-master"
+	}
+}
