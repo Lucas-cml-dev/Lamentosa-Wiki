@@ -112,7 +112,8 @@ tr{
 }
 
 #titcenter{
-    text-align: center; /*Centralizar tudo */
+    text-align: center;
+     /*Centralizar tudo */
 }
 ul {
     list-style-position: inside; /* Move o ponto da lista para mais próximo do texto */
