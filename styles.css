@@ -42,6 +42,11 @@ main {
 .content-section {
     margin-top: 1rem;
 }
+section#calc{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
 
 .hidden {
     display: none;
@@ -104,6 +109,9 @@ th{
 tr{
     border: 1px solid #606060;
 }
-h2#titcenter{
+#titcenter{
+    text-align: center;
+}
+.titcenter{
     text-align: center;
 }
