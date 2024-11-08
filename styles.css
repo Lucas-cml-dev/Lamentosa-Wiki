@@ -52,8 +52,8 @@ section#calc{
     display: none;
 }
 p{
-    margin: 5px;
-    padding: 5px;
+    margin: 10px;
+    padding: 20px;
     text-align: justify;
 }
 
