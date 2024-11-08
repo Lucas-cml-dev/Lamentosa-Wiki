@@ -2,8 +2,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f5;
     color: #333;
-    margin: 01;
-    padding: 0;
+    margin: auto;
+    padding: auto;
 }
 
 header {
@@ -54,6 +54,7 @@ section#calc{
 p{
     margin: 5px;
     padding: 5px;
+    text-align: justify;
 }
 
 footer {
@@ -109,6 +110,22 @@ th{
 tr{
     border: 1px solid #606060;
 }
-h2#titcenter{
-    text-align: center;
+
+#titcenter{
+    text-align: center; /*Centralizar tudo */
+}
+ul {
+    list-style-position: inside; /* Move o ponto da lista para mais próximo do texto */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove o margin padrão */
+    text-align: center; /* Centraliza o texto */
+}
+
+li {
+    display: list-item; /* Faz com que o ponto fique próximo do texto centralizado */
+    text-align: center; /* Alinha o texto da lista à esquerda, mas a lista toda fica centralizada */
+}
+#autor{
+    text-align: right;
+
 }
