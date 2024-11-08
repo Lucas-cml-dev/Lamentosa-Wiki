@@ -109,9 +109,6 @@ th{
 tr{
     border: 1px solid #606060;
 }
-#titcenter{
-    text-align: center;
-}
-.titcenter{
+h2#titcenter{
     text-align: center;
 }
