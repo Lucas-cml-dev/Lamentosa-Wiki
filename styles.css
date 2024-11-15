@@ -67,7 +67,8 @@ section#calc {
 p {
     margin: 1rem;
     text-align: justify;
-    color: red;
+    margin-left: 2rem;
+    margin-right: 2rem;
    
     
 }
