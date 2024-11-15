@@ -68,7 +68,7 @@ p {
     margin: 1rem;
     text-align: justify;
     margin-left: 2rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
    
     
 }
@@ -94,37 +94,51 @@ footer {
 }
 
 /* Estilo base para tabelas */
+/* Estilo base para tabelas */
 table {
-    width: auto; /* Define largura automática para evitar esticar demais */
-    border-collapse: collapse; /* Remove espaçamentos internos */
-    margin: 1rem auto; /* Centraliza a tabela */
+    width: 100%; /* Garante que a tabela ocupe toda a largura disponível */
+    border-collapse: collapse; /* Remove espaçamentos entre bordas */
+    margin: 1rem auto; /* Centraliza a tabela na página */
     overflow-x: auto; /* Permite rolagem horizontal se necessário */
-    display: block; /* Garante que o layout não quebre */
+    display: block; /* Evita problemas de layout em telas pequenas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombras para estilo */
 }
 
+/* Estilização das células da tabela */
 table th, table td {
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #606060;
-    word-wrap: break-word; /* Evita estouro de texto */
-    white-space: normal; /* Permite quebras de linha no conteúdo */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
+    border: 1px solid #606060; /* Bordas */
+    word-wrap: break-word; /* Evita estouros de texto */
+    white-space: normal; /* Permite quebras de linha */
 }
 
+/* Estilo responsivo avançado */
 @media (max-width: 768px) {
     table {
-        display: block;
-        margin: auto; /* Garante centralização também em telas menores */
-        width: 100%; /* Ajusta a largura para caber na tela */
-        overflow-x: auto;
-        white-space: nowrap; /* Evita quebras de linha nas células */
+        display: block; /* Força layout em bloco */
+        width: 100%; /* Ajusta largura à tela */
+        overflow-x: auto; /* Adiciona rolagem horizontal, se necessário */
+        white-space: nowrap; /* Evita quebra de linhas nos títulos/cabeçalhos */
+    }
+
+    table td::before {
+        content: attr(data-label); /* Exibe rótulos no layout mobile */
+        font-weight: bold;
+        display: block; /* Adiciona linha separada no modo empilhado */
+        margin-bottom: 0.5rem;
     }
 
     table th, table td {
-        font-size: 12px; /* Texto menor para dispositivos móveis */
+        font-size: 12px; /* Reduz fonte para dispositivos móveis */
     }
 }
 
-/* Centralização adicional para seções de tabelas */
+/* Centralização adicional para tabelas */
+section {
+    display: block;
+    justify-content: left; /* Centraliza verticalmente */
+}
 section table{
     display: table; /* forma de alinhamento da tabela */
     flex-direction: column; /* Alinha tabelas verticalmente */
@@ -133,39 +147,31 @@ section table{
     text-align: justify;
 }
 
+/* Ajustes para tabelas específicas */
 table#tabmagia, table#tabitens {
-    margin: auto;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Garante responsividade */
+    margin: auto; /* Centraliza a tabela */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
 }
 
+/* Células destacadas */
 table#tabmagia td.ce, table#tabitens td.ce {
-    background-color: #7e7c7c;
-    color: #fff;
-    font-weight: bolder;
+    background-color: #7e7c7c; /* Fundo escuro */
+    color: #fff; /* Texto claro */
+    font-weight: bolder; /* Texto em negrito */
 }
 
 table#tabmagia td.cd, table#tabitens td.cd {
-    background-color: #fff;
-    color: #7e7c7c;
-    font-size: 13px;
-    font-weight: bolder;
+    background-color: #fff; /* Fundo claro */
+    color: #7e7c7c; /* Texto escuro */
+    font-size: 13px; /* Texto menor */
+    font-weight: bolder; /* Texto em negrito */
 }
 
-/* Responsividade avançada para tabelas */
-@media (max-width: 768px) {
-    table {
-        display: block;
-        width: 100%;
-        overflow-x: auto;
-        white-space: nowrap; /* Impede quebras de linha em tabelas */
-    }
-
-    table td::before {
-        content: attr(data-label); /* Exibe rótulos no layout mobile */
-        font-weight: bold;
-        display: block;
-        margin-bottom: 0.5rem;
-    }
+/* Garante que todo conteúdo fique dentro da tela */
+* {
+    box-sizing: border-box; /* Consistência no cálculo de dimensões */
+    max-width: 100%; /* Limita a largura ao tamanho da tela */
 }
 
 /* Centraliza o título */
