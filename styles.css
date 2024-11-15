@@ -56,10 +56,7 @@ section#calc {
     justify-content: center; /* Centraliza horizontalmente */
 }
 
-/* Esconde elementos com a classe "hidden" */
-.hidden {
-    display: none;
-}
+
 
 /* Define margens, preenchimento e justificação para os parágrafos */
 p {
