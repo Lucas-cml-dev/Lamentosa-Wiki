@@ -49,6 +49,8 @@ main {
 /* Adiciona espaçamento entre seções */
 .content-section {
     margin-top: 1rem;
+    margin-bottom: 1rem;
+
 
 }
 
@@ -137,13 +139,6 @@ table#tabmagia td#idgrim {
     border: 1px solid #606060;
 }
 
-/* Mesma estilização para a tabela "tabitens" */
-table#tabitens {
-    border: 1px solid #606060;
-    border-spacing: 0px;
-    margin: auto;
-    text-align: center;
-}
 
 /* Estilo base para a tabela com id "tabitens" */
 table#tabitens {
@@ -151,6 +146,7 @@ table#tabitens {
     border-spacing: 0px; /* Remove espaçamento entre células */
     margin: auto; /* Centraliza a tabela */
     text-align: center; /* Centraliza o conteúdo */
+    margin bottom: 1rem;
 }
 
 /* Células com a classe "ce" na tabela "tabitens" */
