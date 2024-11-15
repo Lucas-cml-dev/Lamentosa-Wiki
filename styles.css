@@ -16,64 +16,61 @@ header {
     text-align: center; /* Centraliza o conteúdo */
 }
 
-/* Remove os marcadores da lista de navegação */
+/* Navegação */
 nav ul {
-    list-style-type: none;
+    list-style-type: none; /* Remove marcadores */
     padding: 0; /* Remove o preenchimento padrão */
+    margin: 0; /* Remove margens */
+    display: flex; /* Flexbox para responsividade */
+    justify-content: center; /* Centraliza itens */
+    flex-wrap: wrap; /* Permite quebra de linha */
 }
 
-/* Deixa os itens da navegação em linha e adiciona margens entre eles */
 nav ul li {
-    display: inline;
     margin: 0 10px;
 }
 
-/* Estilo dos links na navegação */
 nav ul li a {
     color: #fff; /* Cor branca */
     text-decoration: none; /* Remove sublinhado */
     font-weight: bold; /* Negrito */
 }
 
-/* Adiciona sublinhado ao passar o mouse sobre os links */
 nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Define o espaçamento interno do conteúdo principal */
+/* Conteúdo principal */
 main {
     padding: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 5rem; /* Espaço para o rodapé fixo */
 }
 
-/* Adiciona espaçamento entre seções */
 .content-section {
     margin-top: 1rem;
     margin-bottom: 1rem;
-
-
 }
 
-/* Centraliza os elementos dentro da seção com id "calc" */
+/* Centraliza elementos da seção #calc */
 section#calc {
     text-align: center;
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Esconde elementos com a classe "hidden" */
 .hidden {
     display: none;
 }
 
-/* Define margens, preenchimento e justificação para os parágrafos */
 p {
     margin: 10px;
     padding: 20px;
     text-align: justify;
 }
 
-/* Estilização do rodapé */
+/* Rodapé */
 footer {
     background-color: #333; 
     color: #fff;
@@ -85,114 +82,86 @@ footer {
     display: flex;
     justify-content: center;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); 
-    margin-left: 0;
-    overflow-x: hidden;
 }
 
 @media (max-width: 768px) {
     footer {
-        position: relative; /* Ajusta o rodapé para telas menores */
+        position: relative; /* Torna o rodapé relativo em telas menores */
     }
+}
 
+/* Estilo base para tabelas */
+table {
+    width: auto; /* Define largura automática para evitar esticar demais */
+    border-collapse: collapse; /* Remove espaçamentos internos */
+    margin: 1rem auto; /* Centraliza a tabela */
+    overflow-x: auto; /* Permite rolagem horizontal se necessário */
+    display: block; /* Garante que o layout não quebre */
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #606060;
+    word-wrap: break-word; /* Evita estouro de texto */
+    white-space: normal; /* Permite quebras de linha no conteúdo */
+}
+
+@media (max-width: 768px) {
     table {
-        width: 100%; /* Garante tabelas responsivas */
+        display: block;
+        margin: auto; /* Garante centralização também em telas menores */
+        width: 100%; /* Ajusta a largura para caber na tela */
+        overflow-x: auto;
+        white-space: nowrap; /* Evita quebras de linha nas células */
+    }
+
+    table th, table td {
+        font-size: 12px; /* Texto menor para dispositivos móveis */
     }
 }
 
-* {
-    box-sizing: border-box; /* Consistência de dimensões */
-    max-width: 100%; /* Evita que elementos excedam a tela */
+/* Centralização adicional para seções de tabelas */
+section {
+    display: flex;
+    flex-direction: column; /* Alinha tabelas verticalmente */
+    align-items: center; /* Centraliza tabelas horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
 }
 
-
-/* Estilo base para a tabela com id "tabmagia" */
-table#tabmagia {
-    border: 1px solid #606060; /* Borda cinza */
-    border-spacing: 0px; /* Remove espaçamento entre células */
-    margin: auto; /* Centraliza a tabela */
-    text-align: center; /* Centraliza o conteúdo */
-    box-shadow: #333;
+table#tabmagia, table#tabitens {
+    margin: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Células com a classe "ce" na tabela "tabmagia" */
-table#tabmagia td.ce {
-    background-color: #7e7c7c; /* Fundo cinza escuro */
-    color: #ffffff; /* Texto branco */
-    font-weight: bolder; /* Negrito */
-    border: 1px solid #606060; /* Borda cinza */
-}
-
-/* Células com a classe "cd" na tabela "tabmagia" */
-table#tabmagia td.cd {
-    background-color: #ffffff; /* Fundo branco */
-    color: #7e7c7c; /* Texto cinza escuro */
-    font-size: 13px; /* Texto menor */
-    font-weight: bolder; /* Negrito */
-    border: 1px solid #606060; /* Borda cinza */
-}
-
-/* Estilo para células com id "idgrim" na tabela "tabmagia" */
-table#tabmagia td#idgrim {
+table#tabmagia td.ce, table#tabitens td.ce {
     background-color: #7e7c7c;
-    color: #ffffff;
+    color: #fff;
+    font-weight: bolder;
+}
+
+table#tabmagia td.cd, table#tabitens td.cd {
+    background-color: #fff;
+    color: #7e7c7c;
     font-size: 13px;
     font-weight: bolder;
-    border: 1px solid #606060;
 }
 
+/* Responsividade avançada para tabelas */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap; /* Impede quebras de linha em tabelas */
+    }
 
-/* Estilo base para a tabela com id "tabitens" */
-table#tabitens {
-    border: 1px solid #606060; /* Borda cinza */
-    border-spacing: 0px; /* Remove espaçamento entre células */
-    margin: auto; /* Centraliza a tabela */
-    text-align: center; /* Centraliza o conteúdo */
-    margin-bottom: 1rem;
-}
-
-/* Células com a classe "ce" na tabela "tabitens" */
-table#tabitens td.ce {
-    background-color: #7e7c7c; /* Fundo cinza escuro */
-    color: #ffffff; /* Texto branco */
-    vertical-align: auto; /* Alinha verticalmente */
-    font-weight: bolder; /* Negrito */
-    border: 1px solid #606060; /* Borda cinza */
-    text-align: center; /* Centraliza o texto */
-}
-
-/* Células com a classe "cd" na tabela "tabitens" */
-table#tabitens td.cd {
-    background-color: #ffffff; /* Fundo branco */
-    color: #7e7c7c; /* Texto cinza escuro */
-    font-size: 13px; /* Texto menor */
-    font-weight: bolder; /* Negrito */
-    border: 1px solid #606060; /* Borda cinza */
-    text-align: center; /* Centraliza o texto */
-}
-
-/* Estilo para células com id "idgrim" na tabela "tabitens" */
-table#tabitens td#idgrim {
-    background-color: #7e7c7c; /* Fundo cinza escuro */
-    color: #ffffff; /* Texto branco */
-    font-size: 13px; /* Texto menor */
-    font-weight: bolder; /* Negrito */
-    text-align: center; /* Centraliza o texto */
-    border: 1px solid #606060; /* Borda cinza */
-}
-
-
-/* Estilo para cabeçalhos das tabelas */
-th {
-    padding: auto;
-    margin: auto;
-    border: 1px solid #606060;
-    text-align: center;
-}
-
-/* Estilo para linhas das tabelas */
-tr {
-    padding: auto;
-    margin: auto;
+    table td::before {
+        content: attr(data-label); /* Exibe rótulos no layout mobile */
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0.5rem;
+    }
 }
 
 /* Centraliza o título */
@@ -200,24 +169,25 @@ tr {
     text-align: center;
 }
 
-/* Estilo para listas */
+/* Listas */
 ul {
-    list-style-position: inside; /* Posição dos marcadores */
+    list-style-position: inside;
     padding: 0;
     margin: 0;
     text-align: center;
 }
 
-/* Estilo para itens de lista */
 li {
-    display: list-item;
     text-align: center;
 }
 
-/* Alinha o texto à direita */
 #autor {
     text-align: right;
     font-style: italic;
-
 }
 
+/* Responsividade geral */
+* {
+    box-sizing: border-box; /* Consistência de dimensões */
+    max-width: 100%; /* Evita estouro de elementos */
+}
