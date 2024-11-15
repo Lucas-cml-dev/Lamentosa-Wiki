@@ -44,7 +44,7 @@ nav ul li a:hover {
 main {
     padding: 2rem;
     margin-bottom: 5rem; /* Espaço para o rodapé fixo */
-}
+    }
 
 .content-section {
     margin-top: 1rem;
@@ -65,9 +65,11 @@ section#calc {
 }
 
 p {
-    margin: 10px;
-    padding: 20px;
+    margin: 1rem;
     text-align: justify;
+    color: red;
+   
+    
 }
 
 /* Rodapé */
@@ -122,11 +124,12 @@ table th, table td {
 }
 
 /* Centralização adicional para seções de tabelas */
-section {
-    display: flex;
+section table{
+    display: table; /* forma de alinhamento da tabela */
     flex-direction: column; /* Alinha tabelas verticalmente */
     align-items: center; /* Centraliza tabelas horizontalmente */
     justify-content: center; /* Centraliza verticalmente */
+    text-align: justify;
 }
 
 table#tabmagia, table#tabitens {
