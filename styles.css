@@ -84,8 +84,9 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Opcional */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); 
     margin-left: 0;
+    overflow-x: hidden;
 }
 
 @media (max-width: 768px) {
@@ -146,7 +147,7 @@ table#tabitens {
     border-spacing: 0px; /* Remove espaçamento entre células */
     margin: auto; /* Centraliza a tabela */
     text-align: center; /* Centraliza o conteúdo */
-    margin bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* Células com a classe "ce" na tabela "tabitens" */
