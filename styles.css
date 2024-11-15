@@ -43,11 +43,13 @@ nav ul li a:hover {
 /* Define o espaçamento interno do conteúdo principal */
 main {
     padding: 2rem;
+    margin-bottom: 1rem;
 }
 
 /* Adiciona espaçamento entre seções */
 .content-section {
     margin-top: 1rem;
+
 }
 
 /* Centraliza os elementos dentro da seção com id "calc" */
