@@ -220,20 +220,3 @@ li {
     text-align: right;
 }
 
-/* RESPONSIVIDADE: Garante que tabelas se ajustem em telas menores */
-@media (max-width: 768px) {
-    table {
-        width: 100%; /* Faz a tabela ocupar a largura da tela */
-        overflow-x: auto; /* Permite rolagem horizontal se necessário */
-        display: block; /* Evita que o layout quebre */
-    }
-
-    table td, table th {
-        word-wrap: break-word; /* Quebra palavras longas */
-    }
-
-    footer {
-        position: relative; /* Corrige sobreposição em telas pequenas */
-        margin-left: 0;
-    }
-}
