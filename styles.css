@@ -218,5 +218,7 @@ li {
 /* Alinha o texto à direita */
 #autor {
     text-align: right;
+    font-style: italic;
+
 }
 
