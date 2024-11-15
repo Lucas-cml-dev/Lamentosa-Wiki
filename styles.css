@@ -3,8 +3,9 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f5;
     color: #333;
-    margin: auto; /* Define margens automáticas */
-    padding: auto; /* Define preenchimento automático */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove preenchimento */
+    overflow-x: hidden; /* Previne rolagem horizontal */
 }
 
 /* Estilização do cabeçalho */
@@ -70,17 +71,34 @@ p {
 
 /* Estilização do rodapé */
 footer {
-    background-color: #333; /* Fundo escuro */
-    color: #fff; /* Texto branco */
-    text-align: center; /* Centraliza o texto */
-    padding: 1rem; /* Espaçamento interno */
-    position: fixed; /* Fixa na parte inferior */
-    bottom: 0; /* Posiciona no limite inferior */
-    width: 100%; /* Largura total */
-    display: flex; /* Alinha itens no eixo flex */
-    justify-content: center; /* Centraliza itens no eixo principal */
-    margin-left: -40px; /* Ajusta a posição horizontal */
+    background-color: #333; 
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Opcional */
+    margin-left: 0;
 }
+
+@media (max-width: 768px) {
+    footer {
+        position: relative; /* Ajusta o rodapé para telas menores */
+    }
+
+    table {
+        width: 100%; /* Garante tabelas responsivas */
+    }
+}
+
+* {
+    box-sizing: border-box; /* Consistência de dimensões */
+    max-width: 100%; /* Evita que elementos excedam a tela */
+}
+
 
 /* Estilo base para a tabela com id "tabmagia" */
 table#tabmagia {
