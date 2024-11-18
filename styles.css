@@ -180,6 +180,10 @@ table#tabmagia td.cd, table#tabitens td.cd {
 }
 
 /* Listas */
+ul#golds{
+    text-align: justify;
+    
+}
 ul {
     list-style-position: inside;
     padding: 0;
