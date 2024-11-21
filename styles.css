@@ -148,20 +148,20 @@ section table{
 }
 
 /* Ajustes para tabelas específicas */
-table#tabmagia, table#tabitens {
+table#tabmagia, table#tabitens, table#iboss, table#Armas_da_quest{
     width: 100%; /* Garante responsividade */
     margin: auto; /* Centraliza a tabela */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
 }
 
 /* Células destacadas */
-table#tabmagia td.ce, table#tabitens td.ce {
+table#tabmagia td.ce, table#tabitens td.ce, table#iboss td.ce, table#Armas_da_quest td.ce {
     background-color: #7e7c7c; /* Fundo escuro */
     color: #fff; /* Texto claro */
     font-weight: bolder; /* Texto em negrito */
 }
 
-table#tabmagia td.cd, table#tabitens td.cd {
+table#tabmagia td.cd, table#tabitens td.cd, table#iboss td.cd, table#Armas_da_quest td.cd {
     background-color: #fff; /* Fundo claro */
     color: #7e7c7c; /* Texto escuro */
     font-size: 13px; /* Texto menor */
