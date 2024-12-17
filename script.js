@@ -40,3 +40,4 @@ function showSection(sectionId) {
 document.addEventListener('DOMContentLoaded', () => {
     showSection('home');
 });
+// aprendizado a alteração via JS
