@@ -196,6 +196,19 @@ li {
     padding: 0;
     margin: 0;
 }
+.postagem {
+    margin-bottom: 20px;
+}
+
+.postagem h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.postagem p {
+    color: #666;
+    margin-bottom: 10px;
+}
 
 #autor {
     text-align: right;
