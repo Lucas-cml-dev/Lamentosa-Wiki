@@ -41,3 +41,4 @@ document.addEventListener('DOMContentLoaded', () => {
     showSection('home');
 });
 // aprendizado a alteração via JS
+document.querySelector('#titulop').innerHTML = "🔺DARKNIGHT🔻: <br> A Rainha das Sombras ou Apenas Mais um Mito Sombrio?"
