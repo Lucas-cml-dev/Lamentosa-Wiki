@@ -68,9 +68,14 @@ p {
     margin: 1rem;
     text-align: justify;
     margin-left: 2rem;
-    margin-right: 1rem;
-
+    margin-right: 1rem;      
+}
+section.postagem{
+   background-color: rgb(247, 178, 178);   
+   border-radius: 25px;   
    
+}
+h2#titulop{
     
 }
 
