@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f5;
-    color: #333;
+    color: #252525;
     margin: 0; /* Remove margens */
     padding: 0; /* Remove preenchimento */
     overflow-x: hidden; /* Previne rolagem horizontal */
@@ -69,6 +69,7 @@ p {
     text-align: justify;
     margin-left: 2rem;
     margin-right: 1rem;
+
    
     
 }
