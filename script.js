@@ -41,9 +41,12 @@ document.addEventListener('DOMContentLoaded', () => {
     showSection('home');
 });
 // aprendizado a alteração via JS
+
 document.querySelector('#titulop').innerHTML = "🔺DARKNIGHT🔻: <br> A Rainha das Sombras ou Apenas Mais um Mito Sombrio?"
+
+
 // Captura o elemento onde o HTML será inserido
-const conteudo = document.getElementById("conteudo");
+const conteudo = document.getElementById("descricaop");
 
 // Conteúdo HTML extenso que será adicionado
 const htmlExtenso = `
