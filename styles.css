@@ -72,12 +72,16 @@ p {
 }
 section.postagem{
    background-color: rgb(247, 178, 178);   
-   border-radius: 25px;   
-   
+   border-radius: 25px;      
 }
-h2#titulop{
-    
+section.postagem h2{
+
 }
+section.postagem p{
+    margin: 1rem;
+    color: #252525;
+}  
+
 
 /* Rodapé */
 footer {
