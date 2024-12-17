@@ -80,7 +80,11 @@ section.postagem h2{
 section.postagem p{
     margin: 1rem;
     color: #252525;
-}  
+    }  
+section#ulpostagem{
+    padding: 0%;
+    text-align: left;
+}
 
 
 /* Rodapé */
