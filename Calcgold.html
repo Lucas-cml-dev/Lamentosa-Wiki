@@ -47,128 +47,49 @@
 
 
     <main>
-        <section id="about">
-            <h3 id="titcenter">Obtendo Gold</h3>
-            <p>Vamos para a melhor parte, como Farmar e ficar forte no game, vou listar aqui as formas que conheço de
-                farmar Ouro (Quase todas as formas podem ser repetidas, sua melhora no jogo depende de quanto você
-                farma). <br> <br>
-                <strong>Pãozinho</strong>: 60 ataques, metade das caçadas e 1 dungeon diarias. <br>
-                <strong>Casual</strong>: 80-100 ataques, todas as caçadas e 2 dungeon diarias.
-                <br>
-                <strong>Full Base</strong>: 130-160 ataques, 0 caçadas e 2-3 dungeon diarias.
-                <br>
-                <strong>Goodplayer</strong>: 100+ ataques, todas as caçadas, 2-3 dungeons e postar os saques para seus
-                amigos diariamente.
-                <br>
-                <strong>Hardcore</strong>: 140+ ataques, (postando os saques lucrativos no chat do game) todas as
-                caçadas e 3-4 dungeons diariamente.
+  <label for="names">Escolha o:</label>
+  <select id="names">
+    <option value="#">Boss</option>
+    <option value="640000">Orobas</option>
+    <option value="2">The collector</option>
+    <option value="440000">Lost Spirit</option>
+    <option value="4">Khepri male</option>
+    <option value="5">Khepri Female</option>
+    <option value="6">Pain Invoker</option>
+    <option value="7">First Adept</option>
+    <option value="8">First Mother</option> 
+  </select>
 
-            </p>
-            <p>
-                <strong>Calculadora de Gold diario 80+</strong> 
-                <a href="Calcgold.html">Link </a>
-                aaa
-            </p>
-            <ul>
-                <li><strong>
-                        Tarefas Diárias
-                    </strong> <br>
-                    <i>
-                        (Leve em consideração os itens que vendidos dão dinheiros)
-                    </i>
-                </li>
-
-                <li><strong>
-                        Atacando outros players
-                    </strong><br>
-                    <i>
-                        (Mestre Vitalis tem grande vantagem, valendo até uso de pot as vezes)
-                    </i>
-                </li>
-
-                <li><strong>
-                        Atacando Criaturas
-                    </strong>
-                    <i><br>
-                        (Sempre quando for usar esse recurso leve em consideração o bonus da tw.)
-                    </i>
-                </li>
-                <li><strong>
-                        Dungeons
-                    </strong><br>
-                    <i>
-                        (Set sempre nivel 7 e na maioria dos casos uma potion de defesa 5 no round 4 e uma de força no
-                        round 5) <br>
-                        PS: se você está na categoria soldado muito provavelmente não conseguirar chegar até o 5 round
-                    </i>
-                </li>
-                <li>
-                    <strong>
-                        Boss
-                    </strong> <br>
-                    <i>
-                        (é de extrema importancia fazer o boss diariamente não só por conta do ouro mas também pelas
-                        Soul Stones).
-                    </i>
-                </li>
-                <li>
-                    <strong>
-                        Taverna dos Mortos Vivos (Tangerino)
-                    </strong>
-                    <br>
-                    <i>
-                        (Aqui você pode pegar a missão repetivel de item lendario) <br>
-                        ps: O talento Hard Worker da 3x o valor dos itens dropados por você na venda ao Ghost.
-                    </i>
-                </li>
-                <li>
-                    <strong>
-                        Troca de Grimorios/Souls
-                    </strong>
-                    <br>
-                    <i>(e possivel trocar 200 grimorios (level 80+) por 1.5kk e 200 soul porem valor varia do tipo da
-                        soul).</i>
-                </li>
-                <li>
-                    <strong> Cripta Negra</strong>
-                    <br>
-                    <i>
-                        (Na 7 Regiões na casa 5 pode ser feita a Tarefa: Meu Respeito que por 100 escalope de qualquer
-                        tipo pode ser trocado por 2,5kk Diariamente).
-                    </i>
-                </li>
-                <li>
-                    <strong>
-                        Labirinto Esquecido
-                    </strong>
-                    <br>
-                    <i>
-                        (Na 7 Regiões na casa 4 pode ser feita qualquer missão de Super Sabote que com talento hard
-                        worker gera 10kk de ouro se vendido ao Ghost).
-                    </i>
-                </li>
-                <li>
-                    <strong>
-                        Dividendo (Necessario fazer parte de um clã)
-                    </strong>
-                    <br>
-                    <i>(Dividendo varia os valores dependendo de que categoria e o quanto você participou do game na
-                        ultima semana podendo receber 22kk semanais). <br>
-                        ps: acontece todo sabado as 11:21 horario do servidor!
-                    </i>
-                </li>
-                <li>
-                    <strong>Torneio</strong>
-                    <br>
-                    <i>(dia 1 de cada mês inicia o torneio, podendo angariar ao final de 10 dias até 44kk)</i>
-                </li>
+  <div id="increase30-container">
+    <input type="checkbox" id="increase30">
+    <label for="increase30">Você abriu o boss?</label>
+  </div>
+  <div id="increase20-container">
+    <input type="checkbox" id="increase20">
+    <label for="increase20">Ganhou survivor?</label>
+  </div>
+  <div>
+    <input type="checkbox" id="increase50">
+    <label for="increase50">Seu clã tem o Turpi Sanguine?</label>
+  </div>
 
 
-            </ul>
-        </section>
 
-        </section>
+  <div id="multiplier-container">
+    <label for="multiplier">Numero de repetições</label>
+    <select id="multiplier">
+      <option value="1">1x (+5%)</option>
+      <option value="2">2x (+10%)</option>
+      <option value="3">3x (+15%)</option>
+      <option value="4">4x (+20%)</option>
+    </select>
+  </div>
 
+ 
+  <button id="calculate">Calcular</button>
+  <h2>Resultado: <span id="result">R$ 0.00</span></h2>
+
+  <script src="script.js"></script>
     </main>
 
     <footer>
@@ -179,3 +100,32 @@
 </body>
 
 </html>
+<!--
+            Ancião 80 gold por dia
+
+Troca de grimórios - 1 440 000
+Troca de escalpos - 2 500 000
+3 masmoras - 1 566 000 (Aqui descontando 2 pot 5 e 1 pot 4, se voce faz com menos potes, desconta o valor)
+Verba Infernalis - 124 800
+
+Total - 5 590 800
+
+Buff US
+
+- 26 ataques - 35k em média por criatura - 910 000
+- 6 drops (itens raros) - 1 746 360
+
+Buff PDM
+
+- 26 ataques - 50k em média por criatura - 1 300 000
+- 3 drops ( itens elites ) - 2 250 000
+
+Buff MDC
+
+- 26 ataques - 70k em média por criatura - 1 820 000
+- 3 drops (itens raros) - 873 180
+
+Drop normal
+
+- 26 ataques - 35k em média por criatura - 910 000
+- 3 drops (itens raros) - 873 180-->
