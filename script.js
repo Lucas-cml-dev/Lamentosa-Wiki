@@ -84,8 +84,11 @@ document.getElementById("calculate").addEventListener("click", () => {
       finalValue += finalValue * 0.5; // 50%
     }
   
+    // Formatar o resultado com ponto como separador de milhar e vírgula como separador decimal
+    const formattedValue = finalValue.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  
     // Atualizar o resultado na página
-    document.getElementById("result").textContent = `R$ ${finalValue.toFixed(2)}`;
+    document.getElementById("result").textContent = `R$ ${formattedValue}`;
   });
   
   
